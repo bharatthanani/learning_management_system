@@ -1,0 +1,162 @@
+/*-------------------------------------------
+    19. Responsive Design CSS
+-------------------------------------------*/
+
+/*=====================================
+    Extra Large Screen
+========================================*/
+
+@media only screen and (min-width: 1920px) {
+}
+
+/*=====================================
+  For Large Screen
+========================================*/
+
+/*--------Max 1399px Width Screen---------*/
+@media only screen and (max-width: 1399px){
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 110%;
+    }
+    h3 {
+        font-size: 28px;
+        line-height: 33.6px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 110%;
+    }
+    .unit-block-number-style {
+        font-size: 20px;
+    }
+}
+
+/*Default for Max 1366px Width Devices*/
+@media only screen and (max-width: 1366px) {
+
+    body {
+        font-size: 14px;
+    }
+
+}
+
+/*--------Max 1200px Width Screen---------*/
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+/*=====================================
+  For Medium Screen
+========================================*/
+
+@media only screen and (max-width: 1199.98px){
+    .section-heading {
+        font-size: 34px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/*======================================
+      Tablet layout
+=========================================*/
+
+@media only screen and (max-width: 992.98px) {
+
+}
+
+@media only screen and (min-width: 768.98px) and (max-width: 991.98px){
+
+}
+
+@media only screen and (max-width: 991.98px) {
+    
+    .section-t-space {
+        padding-top: 80px;
+    }
+    .section-b-space {
+        padding-bottom: 80px;
+    }
+    .section-b-110-space {
+        padding-bottom: 50px;
+    }
+    .section-t-110-space {
+        padding-top: 50px;
+    }
+    
+    h1 {
+        font-size: 37px;
+    }
+    h2 {
+        font-size: 36px;
+        line-height: 104%;
+    }
+    .section-heading {
+        font-size: 31px;
+    }
+    h5 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .font-18 {
+        font-size: 16px;
+        line-height: 17px;
+    }
+    h6 {
+        font-size: 18px;
+        line-height: 178%;
+    }
+    .sitemap-img img {
+        max-width: 100%;
+    }
+    .see-video-btn {
+        margin-bottom: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 768.98px) {
+}
+
+/*=======================================
+      For Small Devices
+=========================================*/
+@media only screen and (max-width: 767.98px) {
+
+}
+
+/*========================================
+          For large mobile
+=========================================*/
+@media only screen and (max-width:575.98px) {
+
+    h1 {
+        font-size: 28px;
+    }
+    .section-title {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width:480px) {
+}
+
+/*=========================================
+      For very little mobile
+=========================================*/
+
+@media only screen and (min-width:300px) and (max-width:479px) {
+    .section-heading {
+        font-size: 28px;
+    }
+}
+/*-------------------------------------------
+    19. Responsive Design End
+-------------------------------------------*/

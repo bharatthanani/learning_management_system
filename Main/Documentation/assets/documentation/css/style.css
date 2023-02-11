@@ -1,0 +1,655 @@
+/*
+-------------------------------------------------
+  Theme Name: LMSZAI- LMS Online Courses and Education HTML5 Responsive Template
+  Theme URL: 
+  Author: zainiktheme
+  Author URL: https://themeforest.net/user/zainiktheme
+  Creation Date: 08-June-2021
+  Description:A default stylesheet for LMSZAI- LMS Online Courses and Education HTML5 Responsive Template
+  Version: 1.00
+  Primary use: lms, eEducation, learning, learn, education, course, online courses, eLearning, responsive, bootstrap, html5, clean, modern, creative etc.
+
+  ---------------------------------------------------
+  Developed By: zainiktheme
+  Developer URL: https://themeforest.net/user/zainiktheme
+  Developer: Suraiya Aysha
+
+
+  ---------------------------------------------------
+
+  --------------------------------------------------
+  Table of Contents
+  --------------------------------------------------
+  1. General CSS
+  2. Typography CSS
+  3. Button CSS
+  4. Navbar CSS
+  6. Main Content
+ 19. Responsive CSS
+
+------------------------------------------------ */
+
+/*-----------------------------------------------
+    1. General Style
+-------------------------------------------------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    background: #fff none repeat scroll;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: 'Poppins', sans-serif;
+    color: var(--para-color);
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a {
+    color: var(--black-800);
+}
+a:hover {
+    color: var(--brand-color);
+}
+/* Theme All Transitions
+------------------------------- */
+a, .navbar .dropdown .dropdown-toggle::after, .theme-btn {
+    transition: all .5s ease-in-out;
+}
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a > * {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--brand-color);
+}
+
+img::selection {
+    background: transparent;
+}
+
+/*------------------------------------------
+            2.  Typography
+-------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 500;
+    margin: 0;
+    color: var(--black-900);
+}
+h1 {
+    font-size: 3.5rem;
+    line-height: 110%;
+}
+h2 {
+    font-size: 3rem;
+    line-height: 110%;
+}
+h3 {
+    font-size: 2.5rem;
+    line-height: 110%;
+}
+h4 {
+    font-size: 2rem;
+    line-height: 110%;
+}
+h5 {
+    font-size: 1.5rem;
+    line-height: 110%;
+}
+h6 {
+    font-size: 1rem;
+    line-height: 110%;
+}
+
+p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-800);
+    line-height: 180%;
+}
+
+figure {
+    margin: 0 0 0;
+}
+
+/*--------------------------------
+            2.1 Theme Color
+-----------------------------------*/
+:root {
+    --black-900: #0D0E10;
+    --black-800: #46494F;
+    --brand-color: #5e3fd7;
+    --gray-color: #767588;
+    --gray-color: #FAFAFA;
+    --white: #fff;
+}
+
+.color-heading {
+    color: var(--black-900);
+}
+.text-black-900 {
+    color: var(--black-900);
+}
+.text-black-800 {
+    color: var(--black-800);
+}
+.color-hover {
+    color: var(--brand-color);
+}
+.brand-color {
+    color: var(--brand-color);
+}
+.bg-gray {
+    background-color: var(--gray-color);
+}
+.default-border {
+    border: 1px solid var(--strock);
+}
+.border-bottom {
+    border-bottom: 1px solid var(--strock)!important;
+}
+/*--------------------------------
+    2.3 Theme padding, margin
+-----------------------------------*/
+.section-b-space {
+    padding-bottom: 140px;
+}
+.section-t-space {
+    padding-top: 140px;
+}
+.section-b-110-space {
+    padding-bottom: 110px;
+}
+.section-t-110-space {
+    padding-top: 110px;
+}
+.p-30 {
+    padding: 30px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mt-50 {
+    margin-top: 50px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mb-100 {
+    margin-bottom: 100px;
+}
+.radius-95 {
+    border-radius: 95px;
+}
+.radius-20 {
+    border-radius: 20px;
+}
+.radius-30 {
+    border-radius: 30px;
+}
+.radius-4 {
+    border-radius: 4px;
+}
+.radius-5 {
+    border-radius: 5px;
+}
+.radius-8 {
+    border-radius: 8px;
+}
+.radius-10 {
+    border-radius: 10px;
+}
+.radius-50 {
+    border-radius: 50%;
+}
+
+/*--------------------------------
+    2.3 Theme Font Family, Font Size
+-----------------------------------*/
+.font-normal {
+    font-weight: 400;
+}
+.font-bold {
+    font-weight: 700;
+ }
+.font-semi-bold {
+    font-weight: 600;
+}
+.font-medium {
+    font-weight: 500;
+}
+.font-24 {
+    font-size: 24px;
+    line-height: 31px;
+}
+.font-22 {
+    font-size: 22px;
+    line-height: 33px;
+}
+.font-20 {
+    font-size: 20px;
+    line-height: 31px;
+}
+.font-18 {
+    font-size: 18px;
+    line-height: 19px;
+}
+.font-17 {
+    font-size: 17px;
+}
+.font-16 {
+    font-size: 16px;
+}
+.font-15 {
+    font-size: 15px;
+    line-height: 23px;
+}
+.font-14 {
+    font-size: 14px;
+}
+.font-13 {
+    font-size: 13px;
+    line-height: 18px;
+}
+.font-12 {
+    font-size: 12px;
+    line-height: 13px;
+}
+.font-11 {
+    font-size: 11px;
+    line-height: 12px;
+}
+
+/*--------------------------------
+   2.4 Template Default CSS
+-----------------------------------*/
+section {
+    position: relative;
+    z-index: 9;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title .section-sub-heading {
+    margin-top: 10px;
+}
+.cursor {
+    cursor: pointer;
+}
+
+/* Custom Scrollbar start */
+.custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #E6E3EB #fff;
+}
+.custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #E6E3EB;
+}
+.custom-scrollbar::-webkit-scrollbar-track, .custom-scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+}
+/* Custom Scrollbar end */
+
+/*--------------------------------
+   2.5 Template Common CSS
+-----------------------------------*/
+
+/*------------------------------------------
+    2.  Typography
+-------------------------------------------*/
+
+/*--------------------------------------------
+    3. Button Style
+---------------------------------------------*/
+.section-btn {
+    margin-top: 42px;
+}
+.btn {
+  padding: 0;
+}
+.btn.focus, .btn:focus {
+    outline: 0;
+    box-shadow: none;
+}
+button {
+    background-color: transparent;
+}
+button:focus {
+    outline: 0;
+}
+/*-----Theme Button Style-----*/
+.theme-btn {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    outline: none;
+    text-transform: capitalize;
+    z-index: 99;
+    padding: 13px 20px!important;
+    font-size: 15px!important;
+    justify-content: center;
+    border-radius: 6px;
+    font-weight: 500!important;
+    height: 46px;
+    background-color: var(--brand-color);
+    border: 1px solid var(--brand-color);
+    color: var(--white)!important;
+    transition: all .5s ease;
+}
+
+.theme-btn:hover {
+    background-color: var(--white);
+    color: var(--brand-color)!important;
+}
+
+/*-------------------------------------------
+    4. Navbar Area CSS
+-------------------------------------------*/
+.main-menu {
+    z-index: 999;
+}
+.main-menu .navbar {
+    padding: 0;
+    height: 80px;
+    background-color: var(--white);
+    transition: all ease .5s;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+.main-menu .navbar.sticky {
+    background-color: #fff;
+    box-shadow: 0px 7px 11px 0px rgba(0,0,0,.03);
+}
+.nav-link:hover, .nav-link.active {
+    color: var(--brand-color);
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav {
+        align-items: center;
+    }
+}
+
+/* Mobile Offcanvas Menu Start */
+.navbar-toggler {
+    color: var(--black-900);
+    border-color: var(--black-900);
+    color: var(--black-900);
+    border-color: transparent;
+    font-size: 26px;
+    padding: 2px 8px 4px;
+}
+
+.main-menu .offcanvas {
+    background-color: var(--white);
+}
+.btn-close {
+    color: var(--black-900);
+    background-image: none;
+    font-size: 20px;
+    display: flex;
+}
+/* Mobile Offcanvas Menu End */
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+}
+/*Menu Mobile Responsive CSS End*/
+
+/* ============ desktop view .end// ============ */
+
+/* Sidebar Menu Start */
+.main-area {
+    margin-top: 80px;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    padding: 100px 0 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+    height: 100%;
+    overflow-x: auto;
+}
+.sidebarMenuInnerBlock {
+    border-right: 1px solid rgba(0,0,0,0.06);
+}
+.menu-unit {
+    margin-bottom: 40px;
+}
+.menu-title {
+    display: block;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding: 0 30px 14px 30px;
+}
+.menu-unit li a {
+    padding: 10px 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+    margin-bottom: 3px;
+    font-size: 14px;
+    color: var(--black-900);
+}
+.menu-unit li a:hover, .menu-unit li a.active {
+    background-color: var(--brand-color);
+    color: var(--white);
+}
+/* Sidebar Menu End */
+
+/* Right side content */
+.right-side {
+    padding: 50px 0 0;
+}
+.scrollspy-area {
+    padding: 0 50px;
+}
+code {
+    padding: 2px 4px;
+    font-size: 90%;
+    color: var(--brand-color);
+    background-color: #f9f2f4;
+    white-space: nowrap;
+    border-radius: 4px;
+}
+
+.unit-block-number-style {
+    background: var(--brand-color);
+    color: #FFFFFF;
+    padding: 5px 8px;
+    margin-right: 15px;
+    border-radius: 6px;
+    min-width: 48px;
+    min-height: 40px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+}
+.unit-block h4 {
+    display: flex;
+    align-items: center;
+}
+
+.unit-block h4 .iconify {
+    font-size: 24px;
+}
+/* Right side content */
+
+/* ============ small devices ============ */
+@media (min-width: 991px) {
+    .main-menu .offcanvas-body .sidebarMenuInnerBlock {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    
+    .main-menu .offcanvas-body .sidebarMenuInnerBlock {
+        display: block;
+    }
+    .main-menu .navbar {
+        height: 70px;
+    }
+    .navbar-brand img {
+        height: 37px;
+    }
+
+    /* For Responsive Start*/
+    .sidebar {
+        display: none!important;
+    }
+    .mb-100 {
+        margin-bottom: 50px;
+    }
+    .main-menu .offcanvas-body .sidebarMenuInnerBlock {
+        border-right: none;
+    }
+    .main-menu .offcanvas-body h6 {
+        display: none;
+    }
+    /* For Responsive End */
+}
+/*-------------------------------------------
+    11. Footer Area Start
+-------------------------------------------*/
+.footer-area {
+    padding: 26px;
+    border-top: 1px solid #EFEFEF;
+}
+/*-------------------------------------------
+    11. Footer Area End
+-------------------------------------------*/
+
+/* Extra css for Dev coding */
+.sitemap-img {
+    text-align: center;
+}
+.sitemap-img img {
+    max-width: 80%;
+    box-shadow: 0 0px 17px 6px rgba(0,0,0,.05);
+}
+
+.sitemap-img iframe {
+    width: 80%;
+    height: 800px;
+    box-shadow: 0 0px 17px 6px rgba(0,0,0,.05);
+}
+
+
+/*--------------------------------
+    Navbar Video Button
+-----------------------------------*/
+.primary-btn-outline {
+    display: inline-block;
+    padding: 10px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    border: 1px solid #754FFE;
+    background: #754FFE;
+    color: #fff;
+    border-radius: 6px;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
+}
+.primary-btn-outline:hover {
+    color: #fff;
+}
+/*Block Quote Start*/
+.block-quote {
+    margin: 14px 0 25px;
+    padding: 50px 30px 50px 50px;
+    border-radius: 0;
+    position: relative;
+    z-index: 0;
+    border: unset;
+    border-left: 5px solid #754FFE !important;
+    padding-left: 60px !important;
+    background-color: #f5f5f5;
+}
+/*Block Quote End*/

@@ -1,0 +1,2 @@
+<input type="submit" class="btn btn-blue" value="<?php echo e(__('Update')); ?>" name="update">
+<?php /**PATH D:\xampp\htdocs\Nabu\resources\views/layouts/element/form/update-button.blade.php ENDPATH**/ ?>
